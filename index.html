@@ -3,86 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ben & Syd's Wedding</title>
+    <title>Syd+Ben</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="script.js"></script>
 </head>
-<body>
-    <header class="navbar">
-        <div class="logo">Benjamin & Sydney</div>
-        <nav>
-            <ul>
-                <li><a href="#home" class="home-button">Home</a></li>
-                <li><a href="#our-story">Our Story</a></li>
-                <li><a href="#details">The Wedding</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#faq">FAQ</a></li>
-            </ul>
-        </nav>
-    </header>
+<body onload="initialShow()">
 
-    <section id="home" class="hero">
-        <div class="hero-center">
-            <h1>You're Invited!</h1>
-            <p>Join us as we celebrate our marriage on <strong>Sunday, September 7th, 2025</strong></p>
-        </div>
-    </section>
+    <img class="bottom-left" src="images/florals_left.png" alt="">
+    
+    <img class="bottom-right" src="images/florals_right.png" alt="">
 
-    <section id="our-story">
-        <h2>Our Story</h2>
-        <div class="story">
-            <img src="./images/couple.jpg" alt="Jessica and Michael">
-            <p>
-                Ben and Syd met in Boston, while Ben was working an internship, and Syd
-                was attending college.
-            </p>
-        </div>
-    </section>
+    <div class="top-bar">
+        <button class="top-item" onclick="showScreen('home')">Home</button> 
+        <button class="top-item" onclick="showScreen('venue')">Venue</button>
+        <button class="top-item" onclick="showScreen('faq')">FAQ</button>
+    </div>
 
-    <section id="details">
-        <h2>The Wedding</h2>
-        <div class="details-cards">
-            <div class="card">
-                <h3>Date & Time</h3>
-                <p>Sunday, September 7th, 2025, at 4:00 PM</p>
+    <div id="content">
+        <div class="screen" id="home">
+            <div class="text-container">
+                <h1>SYDNEY ALEXANDRA SCHEFFLER ASCI</h1>
+                <h2>AND</h2>
+                <h1>BENJAMIN WILLIAM MASSEY</h1>
             </div>
-            <div class="card">
-                <h3>Venue</h3>
-                <p>Lakeside Gardens, Portland, OR</p>
-                <a href="https://www.lakesidegardensevents.com/" target="_blank">Website</a>
+            <div class="text-container">
+                <h1>September 7th, 2025</h1>
             </div>
-            <div class="card">
-                <h3>Dress Code</h3>
-                <p>Formal Attire</p>
+            <div class="text-container">
+                <h2>Use the buttons above to navigate.</h1>
             </div>
         </div>
-    </section>
 
-    <section id="gallery">
-        <h2>Gallery</h2>
-        <div class="gallery-grid">
-            <img src="./images/photo1.jpg" alt="Engagement Photo">
-            <img src="./images/photo2.png" alt="Couple Laughing">
-            <img src="./images/photo3.png" alt="Venue">
-            <img src="./images/photo4.png" alt="Special Moment">
+        <div class="screen" id="venue">
+            <div class="text-container">
+                <div class="venue-picture-container">
+                    <img class="venue-picture" src="images/venue.png" alt="Picture">
+                </div>
+                <h1>Lakeside Gardens</h1>
+                <h2>16211 SE Foster Rd</h2>
+                <h2>Portland, OR 97236</h2>
+                <div class="lakeside-icons">
+                    <a class="lakeside-icon" href="https://www.lakesidegardensevents.com/">
+                        <img class="lakeside-icon" src="images/link_icon.png" alt="Website">
+                    </a>
+                    <a class="lakeside-icon" href="https://g.co/kgs/GnCehvS">
+                        <img class="lakeside-icon" src="images/map_icon.png" alt="Google Maps">
+                    </a>
+                    <a class="lakeside-icon" href="https://www.instagram.com/lakesidegardens/">
+                        <img class="lakeside-icon" src="images/insta_icon.png" alt="Instagram">
+                    </a>
+                </div>
+            </div>
         </div>
-    </section>
 
-    <section id="faq">
-        <h2>FAQ</h2>
-        <div class="faq-item">
-            <h3>Is there parking available?</h3>
-            <p>Yes, there is ample parking available at the venue.</p>
+        <div class="screen" id="faq">
+            <div class="text-container">
+                <h1>Frequently Asked Questions</h1>
+            </div>
+            <div class="text-container">
+                <h2><u>Question number one?</u></h2>
+                <h3>Answer number one.</h3>
+            </div>
+            <div class="text-container">
+                <h2><u>Question number two?</u></h2>
+                <h3>Answer number two.</h3>
+            </div>
+            <div class="text-container">
+                <h2><u>Question number three?</u></h2>
+                <h3>Answer number three.</h3>
+            </div>
         </div>
-        <div class="faq-item">
-            <h3>Can I bring a plus-one?</h3>
-            <p>Please refer to your invitation for plus-one details.</p>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Benjamin Massey & Sydney Asci. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
+    </div>
 </body>
 </html>

@@ -1,126 +1,120 @@
 body {
-    font-family: 'Arial', sans-serif;
     margin: 0;
-    color: #333;
-    background-color: rgba(238, 240, 157, 1.0);
-    line-height: 1.6;
-}
-
-header.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background: rgba(238, 184, 119, 0.9);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-.navbar .logo {
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-.navbar nav ul {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-}
-
-.navbar nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-.navbar .home-button {
-    background-color: rgba(243, 174, 86, 0.9);
-    color: white;
-    padding: 5px 15px;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
-.hero {
-    background: url('./images/hero.jpg') no-repeat center center/cover;
+    padding: 0;
     height: 100vh;
-    color: white;
-    text-align: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    background-image: url("images/background.png");
+    font-family: "Cormorant Garamond", serif;
+    overflow: hidden;
 }
 
-.hero-center {
-    background-color: rgba(243, 174, 86, 0.8);
-    color: white;
-    padding: 10px 20px;
+.text-container {
+    text-align: center;
+    color: black;
+    position: relative;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+h1 {
+    font-size: min(5vh, 5vw);
+    text-wrap: nowrap;
+}
+
+h2 {
+    font-size: min(2.5vh, 2.5vw);
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: max(25vw, 25vh);
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: max(25vw, 25vh);
+}
+
+.top-bar {
+    position: absolute;
+    top: 0.5vh;
+    height: 9.5vh;
+}
+
+.top-item {
+    background-color: #cfd1b5;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
+    padding: min(2vh, 2vw) min(2vh, 2vw);
+    color: black;
+    text-align: center;
     text-decoration: none;
-    margin-top: 10px;
+    font-size: min(2vh, 2vw);
 }
 
-.story {
-    padding: 0px 5% 0px 5%;
-}
-
-.story img {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    object-fit: cover;
-    aspect-ratio: 1 / 1;
-}
-
-section {
-    padding: 40px 20px;
-    scroll-margin-top: 15px;
-}
-
-section h2 {
+.top-item:active {
+    background-color: #878976;
+    border: none;
+    padding: min(2vh, 2vw) min(2vh, 2vw);
+    color: black;
     text-align: center;
-    margin-bottom: 20px;
-    background-color: rgba(243, 174, 86, 0.8);
+    text-decoration: none;
+    font-size: min(2vh, 2vw);
 }
 
-.details-cards {
+.lakeside-icons {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    gap: 20px;
+    align-items: center;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    filter: brightness(0);
 }
 
-.card {
-    background-color: rgb(244, 236, 190);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.lakeside-icon {
+    width: 2vw;
+    min-width: 30px;
+    max-width: 225px;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 10px;
+.venue-picture-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    overflow: hidden;
+    border-radius: 100px;
 }
 
-.gallery-grid img {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+.venue-picture {
+    width: 30vw;
+    min-width: 300px;
+    max-width: 1250px;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
-.faq-item {
-    padding: 0px 5% 0px 5%;
-}
-
-footer {
-    text-align: center;
-    background-color: rgba(187, 170, 85, 1.0);
-    color: white;
-    padding: 10px;
+.screen {
+    position: absolute;
+    top: 10vh;
+    left: 0px;
+    opacity: 0;
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
