@@ -58,15 +58,11 @@ h2 {
     text-decoration: none;
     font-size: min(2vh, 2vw);
 }
-
+.top-item:hover {
+    background-color: #d8d8ce;
+}
 .top-item:active {
     background-color: #878976;
-    border: none;
-    padding: min(2vh, 2vw) min(2vh, 2vw);
-    color: black;
-    text-align: center;
-    text-decoration: none;
-    font-size: min(2vh, 2vw);
 }
 
 .lakeside-icons {
@@ -76,7 +72,6 @@ h2 {
     align-items: center;
     padding-top: 0.5%;
     padding-bottom: 0.5%;
-    filter: brightness(0);
 }
 
 .lakeside-icon {
@@ -85,6 +80,7 @@ h2 {
     max-width: 225px;
     padding-left: 2%;
     padding-right: 2%;
+    filter: brightness(0);
 }
 
 .venue-picture-container {
@@ -117,4 +113,47 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.hotels-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hotel-item {
+    display: flex;
+    flex-direction: row;
+    background-color: #cfd1b5;
+    width: max(40vw, 40vh);
+    height: min(15vw, 15vh);
+    align-items: center;
+    margin: 2vh 0vh;
+    border: none;
+    border-radius: 15px;
+}
+
+.hotel-image {
+    width: max(10vw, 10vh);
+    height: min(15vw, 15vh);
+    object-fit: cover;
+    padding-right: 1vw;
+    border: none;
+    border-radius: 15px;
+}
+
+.hotel-icon {
+    width: 2vw;
+    min-width: 30px;
+    max-width: 225px;
+    padding-left: 0.5vw;
+    filter: brightness(0);
+}
+.hotel-icon:hover {
+    filter: brightness(0.75);
+}
+
+.hotel-text {
+    width: max(21vw, 21vh)
 }
