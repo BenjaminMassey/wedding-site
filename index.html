@@ -19,7 +19,7 @@
     <div class="top-bar">
         <button class="top-item" onclick="showScreen('home')">Home</button> 
         <button class="top-item" onclick="showScreen('venue')">Venue</button>
-        <button class="top-item" onclick="showScreen('hotels')">Hotels</button>
+        <button class="top-item" onclick="showScreen('hotels-venue')">Hotels</button>
         <button class="top-item" onclick="showScreen('faq')">FAQ</button>
     </div>
 
@@ -60,9 +60,14 @@
             </div>
         </div>
 
-        <div class="screen" id="hotels">
+        <div class="screen" id="hotels-venue">
+            <div class="extra-top-bar">
+                <button class="top-item" onclick="showScreen('hotels-venue')">Near Venue</button>
+                <button class="top-item" onclick="showScreen('hotels-bride')">Near Bride</button>
+                <button class="top-item" onclick="showScreen('hotels-airport')">Near Airport</button>
+            </div>
             <div class="text-container">
-                <h1>Hotels Nearby</h1>
+                <h1>Hotels Near the Venue</h1>
             </div>
             <div class="hotels-container">
                 <div class="hotel-item">
@@ -98,6 +103,104 @@
                         <img class="hotel-icon" src="images/map_icon.png" alt="Google Maps">
                     </a>
                     <a class="hotel-icon" href="https://www.hilton.com/en/hotels/pdxorhx-hampton-portland-east">
+                        <img class="hotel-icon" src="images/link_icon.png" alt="Website">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="screen" id="hotels-bride">
+            <div class="extra-top-bar">
+                <button class="top-item" onclick="showScreen('hotels-venue')">Near Venue</button>
+                <button class="top-item" onclick="showScreen('hotels-bride')">Near Bride</button>
+                <button class="top-item" onclick="showScreen('hotels-airport')">Near Airport</button>
+            </div>
+            <div class="text-container">
+                <h1>Hotels Near the Bride and Groom</h1>
+            </div>
+            <div class="hotels-container">
+                <div class="hotel-item">
+                    <img class="hotel-image" src="images/hilton-garden-inn.jpg" alt="Hilton Garden Inn">
+                    <div class="hotel-text">
+                        <h2>Hilton Garden Inn (Lake Oswego)</h2>
+                    </div>
+                    <a class="hotel-icon" href="https://maps.app.goo.gl/TGh5RoBR5a296v8a7">
+                        <img class="hotel-icon" src="images/map_icon.png" alt="Google Maps">
+                    </a>
+                    <a class="hotel-icon" href="https://www.hilton.com/en/hotels/pdxlogi-hilton-garden-inn-portland-lake-oswego">
+                        <img class="hotel-icon" src="images/link_icon.png" alt="Website">
+                    </a>
+                </div>
+                <div class="hotel-item">
+                    <img class="hotel-image" src="images/best-western.jpg" alt="Test">
+                    <div class="hotel-text">
+                        <h2>Best Western Hotel and Suites</h2>
+                    </div>
+                    <a class="hotel-icon" href="https://maps.app.goo.gl/gRhVK6ADQTUY94bZA">
+                        <img class="hotel-icon" src="images/map_icon.png" alt="Google Maps">
+                    </a>
+                    <a class="hotel-icon" href="https://www.bestwestern.com/en_US/book/hotel-rooms.38185.html">
+                        <img class="hotel-icon" src="images/link_icon.png" alt="Website">
+                    </a>
+                </div>
+                <div class="hotel-item">
+                    <img class="hotel-image" src="images/crowne-plaza.jpg" alt="Test">
+                    <div class="hotel-text">
+                        <h2>Crowne Plaza by IHG</h2>
+                    </div>
+                    <a class="hotel-icon" href="https://maps.app.goo.gl/wu4P3sX3JdKt27xL6">
+                        <img class="hotel-icon" src="images/map_icon.png" alt="Google Maps">
+                    </a>
+                    <a class="hotel-icon" href="https://www.ihg.com/crowneplaza/hotels/us/en/lake-oswego/pdxcp/hoteldetail">
+                        <img class="hotel-icon" src="images/link_icon.png" alt="Website">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="screen" id="hotels-airport">
+            <div class="extra-top-bar">
+                <button class="top-item" onclick="showScreen('hotels-venue')">Near Venue</button>
+                <button class="top-item" onclick="showScreen('hotels-bride')">Near Bride</button>
+                <button class="top-item" onclick="showScreen('hotels-airport')">Near Airport</button>
+            </div>
+            <div class="text-container">
+                <h1>Hotels Near the Airport</h1>
+            </div>
+            <div class="hotels-container">
+                <div class="hotel-item">
+                    <img class="hotel-image" src="images/embassy-suites.jpg" alt="Test">
+                    <div class="hotel-text">
+                        <h2>Embassy Suites by Hilton</h2>
+                    </div>
+                    <a class="hotel-icon" href="https://maps.app.goo.gl/ng21F9zkY8gY6RvE6">
+                        <img class="hotel-icon" src="images/map_icon.png" alt="Google Maps">
+                    </a>
+                    <a class="hotel-icon" href="https://www.hilton.com/en/hotels/pdxeses-embassy-suites-portland-airport">
+                        <img class="hotel-icon" src="images/link_icon.png" alt="Website">
+                    </a>
+                </div>
+                <div class="hotel-item">
+                    <img class="hotel-image" src="images/holiday-inn-express.jpg" alt="Test">
+                    <div class="hotel-text">
+                        <h2>Holiday Inn Express by IHG</h2>
+                    </div>
+                    <a class="hotel-icon" href="https://maps.app.goo.gl/fbZs4PGRkUXTMgih9">
+                        <img class="hotel-icon" src="images/map_icon.png" alt="Google Maps">
+                    </a>
+                    <a class="hotel-icon" href="https://www.ihg.com/holidayinnexpress/hotels/us/en/portland/pdxai/hoteldetail">
+                        <img class="hotel-icon" src="images/link_icon.png" alt="Website">
+                    </a>
+                </div>
+                <div class="hotel-item">
+                    <img class="hotel-image" src="images/sheraton-portland.jpg" alt="Test">
+                    <div class="hotel-text">
+                        <h2>Sheraton Portland Airport Hotel</h2>
+                    </div>
+                    <a class="hotel-icon" href="https://maps.app.goo.gl/n8SB6rFtfQ1B29NaA">
+                        <img class="hotel-icon" src="images/map_icon.png" alt="Google Maps">
+                    </a>
+                    <a class="hotel-icon" href="https://www.marriott.com/en-us/hotels/pdxsi-sheraton-portland-airport-hotel/overview">
                         <img class="hotel-icon" src="images/link_icon.png" alt="Website">
                     </a>
                 </div>

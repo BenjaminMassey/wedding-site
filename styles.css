@@ -45,7 +45,13 @@ h2 {
 .top-bar {
     position: absolute;
     top: 0.5vh;
-    height: 9.5vh;
+    height: 5vh;
+}
+
+.extra-top-bar {
+    position: absolute;
+    bottom: 77.5vh;
+    height: 5vh;
 }
 
 .top-item {
