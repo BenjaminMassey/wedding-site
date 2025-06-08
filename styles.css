@@ -25,6 +25,10 @@ h1 {
 }
 
 h2 {
+    font-size: min(3vh, 3vw);
+}
+
+h3 {
     font-size: min(2.5vh, 2.5vw);
 }
 
@@ -32,14 +36,14 @@ h2 {
     position: absolute;
     bottom: 0px;
     left: 0px;
-    width: max(25vw, 25vh);
+    width: max(22.5vw, 22.5vh);
 }
 
 .bottom-right {
     position: absolute;
     bottom: 0px;
     right: 0px;
-    width: max(25vw, 25vh);
+    width: max(22.5vw, 22.5vh);
 }
 
 .top-bar {
@@ -151,7 +155,7 @@ h2 {
 
 .hotel-icon {
     width: 2vw;
-    min-width: 30px;
+    min-width: 20px;
     max-width: 225px;
     padding-left: 0.5vw;
     filter: brightness(0);
