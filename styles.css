@@ -186,3 +186,23 @@ h3 {
     border: none;
     border-radius: 15px;
 }
+
+.registry-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.registry-item {
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    width: max(40vw, 40vh);
+    height: min(15vw, 15vh);
+    align-items: center;
+    object-fit: contain;
+    margin: 2vh 0vh;
+    border: none;
+    border-radius: 15px;
+}
