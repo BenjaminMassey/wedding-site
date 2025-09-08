@@ -63,5 +63,5 @@ async function showScreen(divName) {
 }
 
 function initialShow() {
-    tweenOn('home', 500);
+    tweenOn('share', 500);
 }
