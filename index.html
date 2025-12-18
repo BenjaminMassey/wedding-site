@@ -23,6 +23,7 @@
         <button class="top-item" onclick="showScreen('registries')">Registries</button>
         <button class="top-item" onclick="showScreen('faq')">FAQ</button>
         <button class="top-item" onclick="showScreen('share')">Share</button>
+        <button class="top-item" onclick="showScreen('photos')">Photos</button>
     </div>
 
     <div id="content">
@@ -278,6 +279,16 @@
                     to share any photos from the big day.
                 </h2>
                 </center>
+            </div>
+        </div>
+        <div class="screen" id="photos">
+            <div class="text-container">
+                <h1>Wedding Photos</h1>
+            </div>
+            <div class="photos-view">
+              <img class="photo-arrow" src="images/left-arrow.png" onclick="prevPhoto()" />
+              <img id="photo" class="photo-item" src="images/wedding/001.JPG" />
+              <img class="photo-arrow" src="images/right-arrow.png" onclick="nextPhoto()" />
             </div>
         </div>
     </div>

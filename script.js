@@ -63,5 +63,48 @@ async function showScreen(divName) {
 }
 
 function initialShow() {
-    tweenOn('share', 500);
+    getPhotos();
+    tweenOn('photos', 500);
+}
+
+let photo_element = undefined;
+let current_photo = 0;
+let photos = [];
+function getPhotos() {
+  fetch('photos.json')
+        .then(r => r.json())
+        .then(images => {
+          images.forEach(img => {
+            photos.push(img);
+          });
+        });
+  photo_element = document.getElementById("photo");
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'ArrowLeft' || event.key === "ArrowUp") {
+      prevPhoto();
+    }
+    if (event.key === 'ArrowRight' || event.key === "ArrowDown") {
+      nextPhoto();
+    }
+  });
+}
+function applyPhoto() {
+  if (photo_element == undefined) {
+    return;
+  }
+  photo_element.src = photos[current_photo];
+}
+function prevPhoto() {
+  current_photo = current_photo - 1;
+  if (current_photo < 0) {
+    current_photo = photos.length - 1;
+  }
+  applyPhoto();
+}
+function nextPhoto() {
+  current_photo = current_photo + 1;
+  if (current_photo >= photos.length) {
+    current_photo = 0;
+  }
+  applyPhoto();
 }
